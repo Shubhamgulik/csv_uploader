@@ -1,9 +1,16 @@
 const mongoose = require("mongoose");
 
-async function connect() {
-  await mongoose.connect("mongodb://127.0.0.1:27017/csv-uploader");
-}
-connect();
+mongoose.connect(
+  "mongodb+srv://shubhamgulik:shubhamgulik@cluster0.wd2ginn.mongodb.net/"
+);
+
+// async function connect() {
+//   await mongoose.connect(
+//     "mongodb+srv://shubhamgulik:shubhamgulik@cluster0.wd2ginn.mongodb.net/"
+//   );
+//   //mongodb://127.0.0.1:27017/csv-uploader
+// }
+// connect();
 
 const db = mongoose.connection;
 
