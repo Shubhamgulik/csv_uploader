@@ -3,12 +3,32 @@
   font-size: large;
 }
 
+body {
+  margin: 0;
+  background-color: #aad4db;
+}
+
 h1 {
   display: flex;
   align-items: center;
   justify-content: center;
   margin: auto;
   color: rgb(239 239 237);
+}
+.header {
+  width: 100vw;
+  height: 10vh;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: #28639b;
+}
+
+.header a {
+  font-size: 3rem;
+  font-weight: 500;
+  font-family: "Times New Roman", Times, serif;
 }
 
 .main-container {
@@ -41,9 +61,9 @@ p {
   color: yellow;
 }
 
-body {
+/* body {
   background-color: #a0b1e6;
-}
+} */
 
 .file-container {
   display: flex;
@@ -132,4 +152,9 @@ td {
   border-radius: 5px;
   overflow-x: scroll;
   width: 100vw;
+}
+
+#searchBox {
+  padding: 5px;
+  border-radius: 10px;
 }
